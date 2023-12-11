@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "energinetdk-semantic-search"
+version = "0.0.1"
+description = "energinetdk-semantic-search"
+readme = "README.md"
+authors = ["Jakob Kristensen <jakob@jakobk.dk>"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.dependencies]
+python = "~3.11"
+python-decouple = "*"
+setuptools = "*"
+scrapy = "*"
+nltk = "*"
+openai = "*"
+click = "*"
+beautifulsoup4 = "*"
+pinecone-client = "*"
+PyPDF2 = "*"
+streamlit = "*"
+
+[tool.poetry.extras]
+uvicorn = ["standard"]
